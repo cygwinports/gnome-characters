@@ -1,0 +1,15 @@
+inherit gnome2
+
+NAME="gnome-characters"
+VERSION=3.18.1
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="GNOME character map"
+DESCRIPTION="A simple GNOME application to find and insert unusual characters."
+
+PATCH_URI="3.18.1-ldflags.patch"
+
+DEPS_PATH="/usr/lib/org.gnome.Characters"
+REQUIRES="girepository-Gtk3.0 girepository-GnomeDesktop3.0 girepository-IBus1.0"
+
+DISTCLEANFILES="lib/*.gir"
